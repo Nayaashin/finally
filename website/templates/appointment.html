@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Appointment
+{% endblock %}
+
+{% block meta_description %}Appointment{% endblock %}"
+
+{% block content %}
+<!-- ***** Breadcrumb Area Start ***** -->
+  <div class="breadcumb-area bg-img bg-gradient-overlay" style="background-image: url({% static 'website/img/bg-img/12.jpg' %});">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-12">
+          <h2 class="title">Забронировать</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="breadcumb--con">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="{% url 'home' %}"><i class="fa fa-home"></i>Главная</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Забронировать прием</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ***** Breadcrumb Area End ***** -->
+
+<center>
+    <h1>Введите данные:</h1>
+    <strong>Ваше имя: </strong>{{ Ваше имя }}<br>
+    <strong>Номер телефона </strong>{{ Номер телефона }}<br>
+    <strong>Почта: </strong>{{ Почта }}<br>
+    <strong>Адрес: </strong>{{ Адрес }}<br>
+    <strong>Какое время: </strong>{{ Время }}<br>
+    <strong>Дата бронирования: </strong>{{ Дата }}<br>
+    <strong>Введите сообщение: </strong>{{ Сообщение }}<br>
+
+    <br><br>
+    <strong>Примечание</strong>
+Эта встреча пока что не назначена. В ближайшее время мы свяжемся с вами по телефону для подтверждения записи.
+    </center>
+
+    <br><br><br>
+
+
+{% endblock %}
+
+
+
+
+
